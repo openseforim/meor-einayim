@@ -27,13 +27,13 @@ THEME_JS = "<script>try{var t=localStorage.getItem('os-theme');if(t)document.doc
 
 
 def site_header(active: str = "") -> str:
-    links = [("index.html", "Chapters"), (REPO, "Code and data (GitHub)")]
+    links = [("index.html", "Chapters"), (REPO, "Code and data")]
     nav = " ".join(f'<a href="{h}"{' aria-current="page"' if h == active else ''}>{t}</a>' for h, t in links)
     nav += ('<label class="theme">Theme <select id="theme" aria-label="Colour theme">'
             '<option value="">Auto</option><option value="light">Light</option><option value="paper">Paper</option>'
             '<option value="dark">Dark</option></select></label>')
     return (f'<header class="site"><div class="bar"><a class="brand" href="index.html">Azariah de\' Rossi, <i>Me\'or Einayim</i> '
-            f'<span>· Hebrew and English</span></a><nav>{nav}</nav></div></header>')
+            f'<span>· reading edition</span></a><nav>{nav}</nav></div></header>')
 
 
 def read_blocks(path: Path):
@@ -147,7 +147,7 @@ Hebrew text: the <a href="{SCAN}">Vilna 1863–66 printing</a> (series Kiryat Se
 <ul class="notes">
 {note_rows}
 </ul>
-<p>{prevnext} · <a href="index.html">All chapters</a> · <a href="{REPO}">Code and data (GitHub)</a></p>
+<p>{prevnext} · <a href="index.html">All chapters</a> · <a href="{REPO}">Code and data</a></p>
 </footer>
 <script src="app.js?v={stamp('app.js')}"></script>
 </body>

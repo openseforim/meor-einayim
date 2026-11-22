@@ -124,14 +124,14 @@ def main() -> None:
 <body>
 {site_header()}
 <header class="chapter">
-<nav class="crumb" aria-label="Chapters"><span><a href="index.html">All chapters</a> · Imrei Binah {num}</span><span class="pn">{prevnext.replace(" · ", " ")}</span></nav>
-<h1>{html.escape(title)}</h1>
+<nav class="crumb" aria-label="Chapters"><span><a href="index.html">All chapters</a> · <i>Imrei Binah</i> {num}</span><span class="pn">{prevnext.replace(" · ", " ")}</span></nav>
+<h1>{html.escape(title).replace('Imrei Binah', '<i>Imrei Binah</i>', 1)}</h1>
 <p class="sub">{html.escape(subtitle)}</p>
 <p class="sub-he" lang="he" dir="rtl">{html.escape(meta["title_he"])}</p>
 <details class="about"><summary>About this text</summary>
 <p class="meta">{html.escape(meta["status"])}</p>
 <p class="meta">{seg} segments in {len(he)} paragraphs. The division into segments and paragraphs is the translator's.
-Text in <span class="ref">[gray brackets]</span> is added by the translator: references (not verified) and supplied words.
+Text in <span class="ref">[gray brackets]</span> is added by the translator: references and supplied words.
 <a class="warn" href="#notes">⚠</a> marks an uncertain rendering.
 Fixed links: <code>#p3</code> is a paragraph (the ¶ at its end), <code>#s12</code> a segment (its number).
 <a class="pb" href="#">[p. 210]</a> marks where a printed page starts and links to its scan: at the exact place in the Hebrew, at the start of the segment in the English.
@@ -264,7 +264,7 @@ def stamp(name: str) -> str:
 def write_index() -> None:
     chapters = json.loads((ROOT / "data" / "chapters.json").read_text(encoding="utf-8"))
     rows = "\n".join(
-        f'<tr><td><a href="imrei-binah-{int(k):02d}.html">Imrei Binah {k}</a></td><td>{html.escape(v["title_en"])}</td></tr>'
+        f'<tr><td><a href="imrei-binah-{int(k):02d}.html"><i>Imrei Binah</i> {k}</a></td><td>{html.escape(v["title_en"])}</td></tr>'
         for k, v in sorted(chapters.items(), key=lambda kv: int(kv[0])) if (ROOT / "docs" / f"imrei-binah-{int(k):02d}.html").exists())
     idx = ROOT / "docs" / "index.html"
     t = idx.read_text(encoding="utf-8")

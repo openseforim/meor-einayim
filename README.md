@@ -140,4 +140,4 @@ The English draft is by Claude (Anthropic), directed and reviewed by Ezra Brand.
 
 ## License
 
-MIT (see `LICENSE`): the code, the Hebrew transcription and the English translation in this repository.
+The Hebrew transcription and the English translation: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see `LICENSE-TEXT`). The code: MIT (see `LICENSE`).

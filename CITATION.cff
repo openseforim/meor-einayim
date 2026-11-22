@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this edition, please cite it as below."
+title: "Azariah de' Rossi, Me'or Einayim: reading edition with English translation"
+type: dataset
+authors:
+  - family-names: Brand
+    given-names: Ezra
+abstract: "Imrei Binah, the third part, in 60 chapters: the Hebrew text checked against the Vilna scan, with an English translation. OCR checked against the scan; English translation made with AI models."
+license: CC-BY-SA-4.0
+url: "https://openseforim.org/meor-einayim/"
+repository-code: "https://github.com/openseforim/meor-einayim"
+keywords:
+  - "Judaica"
+  - "Hebrew"
+  - "digital humanities"
+  - "translation"
+  - "digital edition"

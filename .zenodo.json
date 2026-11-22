@@ -1,0 +1,33 @@
+{
+  "title": "Azariah de' Rossi, Me'or Einayim: reading edition with English translation",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "description": "<p>Imrei Binah, the third part, in 60 chapters: the Hebrew text checked against the Vilna scan, with an English translation.</p><p>OCR checked against the scan; English translation made with AI models.</p><p>Read online: <a href=\"https://openseforim.org/meor-einayim/\">https://openseforim.org/meor-einayim/</a></p>",
+  "creators": [
+    {
+      "name": "Brand, Ezra"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "access_right": "open",
+  "keywords": [
+    "Judaica",
+    "Hebrew",
+    "digital humanities",
+    "translation",
+    "digital edition"
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://openseforim.org/meor-einayim/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://archive.org/details/sefermeorenayim00ross",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-book"
+    }
+  ]
+}

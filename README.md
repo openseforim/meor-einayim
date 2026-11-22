@@ -1,6 +1,6 @@
 # Azariah de' Rossi, *Me'or Einayim*: Hebrew and English
 
-Site: <https://ezrabrand.github.io/meor-einayim/>
+Site: <https://openseforim.org/meor-einayim/>
 
 Azariah de' Rossi (about 1511 to 1578) printed *Me'or Einayim* in Mantua in 1573–75. This repository holds a segment-aligned Hebrew and English text of its third and longest part, Imrei Binah (chapters 1-60), and the scripts that build the side-by-side pages. The drafts are made by models and are not reviewed.
 

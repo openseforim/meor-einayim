@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "slug": "meor-einayim",
+  "order": 30,
+  "kind": "translation",
+  "title": "Azariah de' Rossi, Me'or Einayim",
+  "short_title": "Me'or Einayim",
+  "title_he": "מאור עינים",
+  "author": "Azariah de' Rossi (about 1511–1578)",
+  "status_label": "Draft translation, Imrei Binah",
+  "summary": "Imrei Binah, the third part: Hebrew text checked against the Vilna scan, with an English draft translation.",
+  "base_edition": {
+    "label": "Vilna 1863–66 (Kiryat Sefer), after the Mantua edition of 1573–75",
+    "scan_url": "https://archive.org/details/sefermeorenayim00ross"
+  },
+  "method": "OCR checked against the scan; English draft translation by AI models, not reviewed; references not yet verified.",
+  "cite": "Azariah de' Rossi, Me'or Einayim: Imrei Binah, Hebrew text with English draft translation, ed. Ezra Brand. Open Seforim",
+  "url": "https://openseforim.org/meor-einayim/",
+  "repo": "https://github.com/openseforim/meor-einayim",
+  "licence": {
+    "name": "MIT License (transcription, translation and code)",
+    "url": "https://github.com/openseforim/meor-einayim/blob/main/LICENSE"
+  }
+}

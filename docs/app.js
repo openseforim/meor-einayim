@@ -5,6 +5,6 @@
   th.addEventListener('change',function(){
     if(th.value) document.documentElement.setAttribute('data-theme',th.value);
     else document.documentElement.removeAttribute('data-theme');
-    try{localStorage.setItem('me-theme',th.value)}catch(e){}
+    try{localStorage.setItem('os-theme',th.value)}catch(e){}
   });
 })();

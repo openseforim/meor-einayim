@@ -23,7 +23,7 @@ SCAN = "https://archive.org/details/sefermeorenayim00ross"
 REPO = "https://github.com/openseforim/meor-einayim"
 # set the saved theme before the first paint (no flash)
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Hebrew:wght@400;600&display=swap">\n'
-THEME_JS = "<script>try{var t=localStorage.getItem('me-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>"
+THEME_JS = "<script>try{var t=localStorage.getItem('os-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>"
 
 
 def site_header(active: str = "") -> str:
@@ -118,6 +118,8 @@ def main() -> None:
 <title>{html.escape(title)} — Azariah de' Rossi, Me'or Einayim</title>
 {FONTS}<link rel="stylesheet" href="style.css?v={stamp('style.css')}">
 {THEME_JS}
+<link rel="stylesheet" href="/assets/os.css">
+<script src="/assets/os.js" defer></script>
 </head>
 <body>
 {site_header()}

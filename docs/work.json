@@ -17,6 +17,7 @@
   "cite": "Azariah de' Rossi, *Me'or Einayim*: *Imrei Binah*, Hebrew text with English translation, ed. Ezra Brand. Open Seforim",
   "url": "https://openseforim.org/meor-einayim/",
   "repo": "https://github.com/openseforim/meor-einayim",
+  "doi": "10.5281/zenodo.24458139",
   "licence": {
     "name": "CC BY-SA 4.0 (texts and translations); code: MIT",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"

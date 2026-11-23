@@ -2,6 +2,8 @@
 
 Site: <https://openseforim.org/meor-einayim/>
 
+Cite as: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24458139.svg)](https://doi.org/10.5281/zenodo.24458139) (Zenodo; this DOI always points to the newest release)
+
 Azariah de' Rossi (about 1511 to 1578) printed *Me'or Einayim* in Mantua in 1573–75. This repository holds a segment-aligned Hebrew and English text of its third and longest part, Imrei Binah (chapters 1-60), and the scripts that build the side-by-side pages. The drafts are made by models and are not reviewed.
 
 ## Status

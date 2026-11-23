@@ -57,6 +57,15 @@ def fmt_en(text: str) -> str:
     return text
 
 
+def heb_num(n: int) -> str:
+    """1 -> א, 15 -> טו, 16 -> טז, 60 -> ס (chapter numbers as printed)."""
+    if n in (15, 16):
+        return {15: "טו", 16: "טז"}[n]
+    tens = ["", "י", "כ", "ל", "מ", "נ", "ס", "ע", "פ", "צ"][n // 10]
+    ones = ["", "א", "ב", "ג", "ד", "ה", "ו", "ז", "ח", "ט"][n % 10]
+    return tens + ones
+
+
 def main() -> None:
     num = int(sys.argv[1])
     meta = json.loads((ROOT / "data" / "chapters.json").read_text(encoding="utf-8"))[str(num)]
@@ -125,9 +134,10 @@ def main() -> None:
 {site_header()}
 <header class="chapter">
 <nav class="crumb" aria-label="Chapters"><span><a href="index.html">All chapters</a> · <i>Imrei Binah</i> {num}</span><span class="pn">{prevnext.replace(" · ", " ")}</span></nav>
+<p class="title-he" lang="he" dir="rtl">אמרי בינה, פרק {heb_num(num)}</p>
+<p class="sub-he" lang="he" dir="rtl">{html.escape(meta["title_he"])}</p>
 <h1>{html.escape(title).replace('Imrei Binah', '<i>Imrei Binah</i>', 1)}</h1>
 <p class="sub">{html.escape(subtitle)}</p>
-<p class="sub-he" lang="he" dir="rtl">{html.escape(meta["title_he"])}</p>
 <details class="about"><summary>About this text</summary>
 <p class="meta">{html.escape(meta["status"])}</p>
 <p class="meta">{seg} segments in {len(he)} paragraphs. The division into segments and paragraphs is the translator's.
